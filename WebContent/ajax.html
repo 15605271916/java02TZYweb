@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-1.10.2.js"></script>
+<script type="text/javascript">
+function getData(){
+	
+	$.ajax({
+		
+		url:'test2',
+		type:'post',
+		data:JSON.stringify({"name":$('#name').val(),"age":$("#age").val()}),
+		dataType:"json",
+		contentType:'application/json;charset=utf-8',
+		success:function(data){
+			
+			console.log(data)
+			
+			$('#div1').html("姓名："+data.name+"<br/>"+"年龄："+data.age)
+			
+		},
+		error:function(data){
+			
+			console.log(data)
+		}
+		
+		
+	});
+	
+	
+}
+</script>
+
+</head>
+<body>
+	<input id="name" />
+	<br />
+	<input id="age" />
+	<br />
+	<button onclick="getData()">请求后台</button>
+
+	<div id="div1"
+		style="border: 1px red solid; width: 200px; height: 100px"></div>
+
+</body>
+</html>
