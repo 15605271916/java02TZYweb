@@ -12,11 +12,8 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+
 	
-	 <context-param>
-        <param-name>a</param-name>
-        <param-value>AAA</param-value>
-      </context-param>
 
 	<servlet>
 		<servlet-name>test11</servlet-name>
@@ -28,119 +25,8 @@
 	</servlet-mapping>
 
 
-	<servlet>
-		<servlet-name>test12</servlet-name>
-		<servlet-class>day092302J2EE03servlet01.Test1</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>test12</servlet-name>
-		<url-pattern>/test12</url-pattern>
-	</servlet-mapping>
 
-
-	<servlet>
-		<servlet-name>test21</servlet-name>
-		<servlet-class>day092401J2EE03servlet02.Test1</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>test21</servlet-name>
-		<url-pattern>/test21</url-pattern>
-	</servlet-mapping>
-
-
-	<servlet>
-		<servlet-name>test22</servlet-name>
-		<servlet-class>day092401J2EE03servlet02.Test2</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>test22</servlet-name>
-		<url-pattern>/test22</url-pattern>
-	</servlet-mapping>
-
-
-	<servlet>
-		<servlet-name>test23</servlet-name>
-		<servlet-class>day092401J2EE03servlet02.Test3</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>test23</servlet-name>
-		<url-pattern>/test23</url-pattern>
-	</servlet-mapping>
-
-
-	<servlet>
-		<servlet-name>test24</servlet-name>
-		<servlet-class>day092401J2EE03servlet02.Test4</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>test24</servlet-name>
-		<url-pattern>/test24</url-pattern>
-	</servlet-mapping>
-
-
-	<servlet>
-		<servlet-name>test26</servlet-name>
-		<servlet-class>day092401J2EE03servlet02.Test6</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>test26</servlet-name>
-		<url-pattern>/test26</url-pattern>
-	</servlet-mapping>
-
-
-	<servlet>
-		<servlet-name>test31</servlet-name>
-		<servlet-class>day092601J2EE04servlet03.Test1</servlet-class>
-		<init-param>
-			<param-name>a</param-name>
-			<param-value>A</param-value>
-		</init-param>
-		<init-param>
-			<param-name>b</param-name>
-			<param-value>B</param-value>
-		</init-param>
-		<init-param>
-			<param-name>encode</param-name>
-			<param-value>UTF-8</param-value>
-		</init-param>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>test31</servlet-name>
-		<url-pattern>/test31</url-pattern>
-	</servlet-mapping>
 	
-	
-	<servlet>
-		<servlet-name>test32</servlet-name>
-		<servlet-class>day092601J2EE04servlet03.Test2</servlet-class>
-		<init-param>
-			<param-name>a</param-name>
-			<param-value>AA</param-value>
-		</init-param>
-		<load-on-startup>0</load-on-startup>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>test32</servlet-name>
-		<url-pattern>/test32</url-pattern>
-	</servlet-mapping>
-	
-	
-	
-	<servlet>
-		<servlet-name>test33</servlet-name>
-		<servlet-class>day092601J2EE04servlet03.Test3</servlet-class>
-		
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>test33</servlet-name>
-		<url-pattern>/test33</url-pattern>
-	</servlet-mapping>
-	<session-config>
-	<session-timeout>1200</session-timeout>
-	</session-config>
-	
-	
-
 
 
 
