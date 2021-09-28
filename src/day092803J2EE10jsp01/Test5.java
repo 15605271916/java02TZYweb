@@ -1,4 +1,4 @@
-package day092801J2EE08servlet07;
+package day092803J2EE10jsp01;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -7,39 +7,39 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-public class Test3 extends HttpServlet {
+public class Test5 extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		resp.setCharacterEncoding("utf-8");
+		resp.setContentType("text/html");
 		
-		System.out.println("test3");
-		
-		HttpSession session=req.getSession();
-		
-		System.out.println(session.getId());
-		
-		req.setAttribute("name", "bwf");
+		String name=req.getParameter("name");
 		
 		PrintWriter out=resp.getWriter();
 		
 		out.print("<html>");
 		
-		out.print("hello");
+		out.print("<body>");
 		
-		out.print("<br/>");
+		out.print("<b>qwer</b>");
 		
-		out.print("bwf");
+		out.print(name.toUpperCase());
+		
+		out.print("</body>");
 		
 		out.print("</html>");
 		
-//		out.flush();
-//		
-//		out.close();
+		out.flush();
+		out.close();
+		
+		
 
-		System.out.println("输出结束");
 		
 	}
 	
+	
+
 }

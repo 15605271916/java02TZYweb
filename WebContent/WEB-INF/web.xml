@@ -16,7 +16,7 @@
 
 	
 	
-	<filter>
+	<!-- <filter>
 		<filter-name>filter1</filter-name>
 		<filter-class>day092801J2EE08servlet07.Filter1</filter-class>
 	</filter>
@@ -28,11 +28,33 @@
 	<servlet>
 		<servlet-name>test53</servlet-name>
 		<servlet-class>day092801J2EE08servlet07.Test3</servlet-class>
-		<load-on-startup>0</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>test53</servlet-name>
 		<url-pattern>/test53</url-pattern>
+	</servlet-mapping>
+	
+	
+	<listener>
+		<listener-class>day092802J2EE09servlet08.ReqListener</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>day092802J2EE09servlet08.SessionListener</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>day092802J2EE09servlet08.ReqAttrListener</listener-class>
+	</listener> -->
+	
+	<servlet>
+		<servlet-name>test55</servlet-name>
+		<servlet-class>day092803J2EE10jsp01.Test5</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>test55</servlet-name>
+		<url-pattern>/test55</url-pattern>
 	</servlet-mapping>
 
 
