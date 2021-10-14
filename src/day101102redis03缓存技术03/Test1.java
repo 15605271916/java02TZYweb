@@ -1,4 +1,4 @@
-package day101102redis03;
+package day101102redis03缓存技术03;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
