@@ -1,4 +1,4 @@
-package day101201redis04消息队列;
+package day101201J2EE17redis04消息队列;
 
 public class Test1 {
 	

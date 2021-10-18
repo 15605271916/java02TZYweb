@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="day101501J2EE20mybatis03.Category">
+
+	<select id="find1"
+		resultType="day101501J2EE20mybatis03.Category">
+		select *
+		from category
+		where name like concat('%',#{name},'%')
+	</select>
+
+	<resultMap type="day101501J2EE20mybatis03.Category" id="rm2"
+		autoMapping="true">
+		<id column="cid" property="id" />
+		<result column="cname" property="name"/>
+		<collection property="productList" ofType="day101501J2EE20mybatis03.Product">
+				<result column="pid" property="id"/>
+				<result column="pname" property="name"/>
+		</collection>
+	</resultMap>
+	<select id="find4" resultMap="rm2">
+		SELECT *
+		FROM category a
+		LEFT JOIN product b
+		ON a.id=b.cid
+		WHERE a.id=2
+
+	</select>
+
+
+</mapper>
+	

@@ -1,4 +1,4 @@
-package day101102redis03缓存技术03;
+package day101102J2EE16redis03缓存技术03;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

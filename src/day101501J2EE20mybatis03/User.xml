@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="day101501J2EE20mybatis03.User">
+
+	<select id="save1" resultType="day101501J2EE20mybatis03.User">
+		select *
+		from user a
+		left join card b
+		on a.id=b.uid
+		where a.id=#{id}
+		
+	</select>
+
+</mapper>

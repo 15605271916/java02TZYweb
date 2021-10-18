@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="day101401J2EE18mybatis01.User">
+
+	<insert id="save1">
+		insert into user(id,name) values(7,'bwf')
+	</insert>
+
+	<insert id="save2">
+		insert into user(id,name) values(8,'bwf2')
+	</insert>
+
+	<insert id="save">
+		insert into user(id,name) values(#{id},#{name})
+	</insert>
+
+	<delete id="del1">
+		delete from user where id=#{id}
+	</delete>
+
+	<update id="up1">
+		update user set name=#{name} where id=#{id}
+	</update>
+
+	<select id="find1" resultType="User">
+		select *
+		from user
+		where id=#{id}
+	</select>
+
+	<select id="find2" resultType="User">
+		select *
+		from user
+		where 1=1
+	</select>
+
+	<resultMap type="User" id="rm1">
+		<id column="id" property="id" />
+		<result column="name2" property="name" />
+	</resultMap>
+
+	<!-- <select id="find3" resultMap="rm1">
+		select id,name as name2
+		from user
+		where id=5 or name='张三';
+	</select>
+ -->
+</mapper>
