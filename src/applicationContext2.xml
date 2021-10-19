@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean name="u1" class="day101901J2EE22spring01.User4"></bean>
+
+<bean name="dog1" class="day101901J2EE22spring01.Dog"></bean>
+
+<bean name="u2" class="day101901J2EE22spring01.User4">
+
+	<property name="name" value="李四"></property>
+	<property name="dog" ref="dog1"></property>
+
+</bean>
+
+
+</beans>

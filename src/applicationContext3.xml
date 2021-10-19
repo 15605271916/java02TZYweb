@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean name="u1" class="day101901J2EE22spring01.User4">
+		<property name="name" value="qwer"></property>
+	</bean>
+	
+	<bean name="u2" class="day101901J2EE22spring01.User4">
+		<constructor-arg name="name" value="zhangsan"></constructor-arg>
+	</bean>
+	
+	<bean id="dog1" class="day101901J2EE22spring01.Dog"></bean>
+	
+	<bean name="u3" class="day101901J2EE22spring01.User4">
+		<constructor-arg index="0" value="lisi"></constructor-arg>
+		<constructor-arg index="1" ref="dog1"></constructor-arg>
+	</bean>
+	
+	<bean name="u4" class="day101901J2EE22spring01.User4">
+		<constructor-arg name="name" value="wangwu"></constructor-arg>
+		<constructor-arg name="dog">
+			<bean name="dog2" class="day101901J2EE22spring01.Dog">
+				<property name="name" value="旺财"></property>
+			</bean>
+		</constructor-arg>
+	</bean>
+	
+	<bean name="u5" class="day101901J2EE22spring01.User4">
+		<constructor-arg name="name" value="zhaoliu"></constructor-arg>
+		<constructor-arg name="dog">
+			<bean class="day101901J2EE22spring01.Dog">
+				<property name="name" value="旺财2"></property>
+			</bean>
+		
+		</constructor-arg>
+	
+	</bean>
+
+
+
+</beans>
