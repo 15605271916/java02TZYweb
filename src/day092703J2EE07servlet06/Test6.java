@@ -50,5 +50,4 @@ public class Test6 implements Filter{
 		
 	}
 
-
 }
