@@ -17,7 +17,6 @@
 <context:component-scan base-package="day102501J2EE29spring08"></context:component-scan>
 
 
-
 <!-- 配置视图转发 -->
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 

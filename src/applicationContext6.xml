@@ -14,7 +14,6 @@
    http://www.springframework.org/schema/context     
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-
 	<bean name="myAspect" class="day102002J2EE24spring03.MyAspect"></bean>
 	<bean name="userService"
 		class="day102001J2EE23spring02.UserService"></bean>

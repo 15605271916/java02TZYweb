@@ -1,9 +1,10 @@
-package day102501J2EE29spring08;
+package day102601J2EE31spring10;
 
 public class User {
 	
 	private int id;
 	private String name;
+	
 	
 	public int getId() {
 		return id;
@@ -17,5 +18,8 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
+	
 
 }

@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+
+function show(){
+	
+	alert("ok")
+	
+}

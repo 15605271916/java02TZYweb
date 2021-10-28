@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+
+	hello thymeleaf test1 page
+	
+	<div th:text="${name}+${id}" style="border:2px red solid;width:200px;height:50px;color:green;font-size:36px">名字</div>
+	
+	<hr/>
+	
+	<div style="border:2px red solid;" th:if="true">aaa</div>
+	<div style="border:2px red solid;" th:if="true">bbb</div>
+	<div style="border:2px red solid;" th:if="true">ccc</div>
+	
+	<div style="border:1px blue solid;" >
+		ddd
+	</div>
+	
+	<hr/>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>Num</th>
+				<th>Name</th>
+				<th>Flag</th>
+			</tr>
+		</thead>
+	
+		<tbody>
+			<tr th:each="user,s:${users}" >
+				<td th:text="${user.id}">1</td>
+				<td th:text="${user.name}">zhangsan</td>
+				<td></td>
+			</tr>
+		</tbody>
+	
+	</table>
+	
+	
+
+</body>
+</html>

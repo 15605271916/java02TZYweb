@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/my.css}"  />
+<script type="text/javascript" th:src="@{/js/my.js}"></script>
+<script type="text/javascript" th:inline="javascript">
+
+	var a=1;
+	console.log(a);
+
+	var b=[[${b}]];
+	console.log(b);
+
+	var c=[[${c}]];
+	console.log(c);
+
+	var d=[[${d}]];
+	console.log(d);
+
+</script>
+
+</head>
+<body>
+
+	thymeleaf test2 page
+	<div onclick="show()">css</div>
+	
+	<img th:src="@{/img/1.png}"/><br/>
+	<img th:src="@{/img/2.png}"/>
+	
+	<hr />
+	
+	<form action="">
+		name:<input type="text" value="${user.name}"/><br />
+		choose:<input type="radio" value="1" th:checked="${user.check==1}"/>YES <br />
+		choose:<input type="radio" value="0" th:checked="${user.check==0}"/>NO <br />
+		select:
+		<select>
+			<option th:each="data:${map}" th:value="${data.key}" th:text="${data.value}" th:selected="${user.index==data.key}"></option>
+		</select>
+	</form>
+	
+	<hr />
+	
+	<span th:inline="text">
+		<span>[[${name}]]</span><br />
+		<span>[[${name}]]</span><br />
+		<span>[[${name}]]</span><br />
+		<span>[[${name}]]</span><br />
+		<span>[[${name}]]</span><br />
+	</span>
+	
+	<hr />
+	
+	<span th:include="foot::cp1"></span>
+	
+	<div th:include="foot::#cp2"></div>
+	
+	
+</body>
+</html>
